@@ -295,9 +295,9 @@ class FormConverter {
 }
 
 //Calling the functions and assigning related variables
-$servername = "localhost";
-$username = "walutyadmin";
-$password = "KursyWalut0.";
+$servername = ".";
+$username = ".";
+$password = ".";//to be filled with on server
 $db_name = "currencies";
 $apiurl = "http://api.nbp.pl/api/exchangerates/tables/a/";
 
