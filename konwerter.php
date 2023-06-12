@@ -34,7 +34,8 @@ class DbConnection {
         $this->connection = mysqli_connect($this->servername, $this->username, $this->password, $this->db_name);
         if(!$this->connection) {
             die("Database connection error: " . mysqli_connect_error());
-        } 
+        }
+        mysqli_set_charset($this->connection, "utf8mb4");//ensures proper render of accented characters 
     }
 
     public function getConnection() {
